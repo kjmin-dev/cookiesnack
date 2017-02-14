@@ -1,6 +1,6 @@
 'use strict'
 /**
- * [cooky]
+ * [cookiesnack]
  * !!! NOTICE BEFORE REVIEW THIS CODE !!!
  *
  * |Parsed Object| in arguments (arg) at this code's comments is meaning the Map Object that had parsed already by parse (cookieStr)
@@ -11,9 +11,9 @@
 const cookiesnack = {
   /**
    * [parseCookie description]
-   * Parse the cookie string to key:val object
+   * Parse the cookie string to Map object
    * This function returns Promise. please use this function like -> parse(str).then((result) => {})
-   * 주어진 쿠키를 key:value 매칭의 객체 배열로 반환합니다
+   * 주어진 쿠키를 Map 객체로 반환합니다
    * 프로미스가 지원되지 않는 환경을 제외하고 항상 프로미스 객체를 반환하니 콜백을 사용하지 않을 시에 parse(str).then((result) => {}) 방식으로 사용해야 함.
    *
    * @param  {String}   cookieStr [original cookie string]
