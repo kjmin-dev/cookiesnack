@@ -1,0 +1,28 @@
+{
+  "name": "cookiesnack",
+  "version": "0.0.0",
+  "description": "JavaScript cookie controller",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/test.js",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/lightj/cookyjs"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "javascript",
+    "cookie",
+    "cooky"
+  ],
+  "author": "leichtjoon",
+  "license": "WTFPL",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "webpack": "^2.2.1"
+  }
+}
