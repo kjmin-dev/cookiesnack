@@ -8,7 +8,7 @@
  * @type {Object}
  */
 
-const cooky = {
+const cookiesnack = {
   /**
    * [parseCookie description]
    * Parse the cookie string to key:val object
@@ -311,4 +311,4 @@ const cooky = {
   }
 }
 
-module.exports = cooky
+module.exports = cookiesnack
