@@ -1,4 +1,5 @@
 # Cookiesnackjs
+## leichtjoon https://github.com/lightj https://www.npmjs.com/package/cookiesnack
 ## About
 - This library is to make cookies easy to manipulate.
 - You can manipulate cookie string, or you can parse them into object types and manipulate them.
