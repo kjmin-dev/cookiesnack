@@ -1,1 +1,1 @@
-module.exports = require('./src/common.js')
+module.exports = require('./src/cookiesnack')
