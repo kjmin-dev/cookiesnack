@@ -53,7 +53,7 @@
 
     findValueByKey(cookieStr, key, cb)
     // Will return the array of vlues if given key is in cookie string.
-    // For Object, you can just find the value by simply typing cookie.key
+    // For Object, you can just find the value by simply typing cookie.get(key)
 
     editKey(cookie, Okey, Nkey, cb)
     // Changes the key value in the cookie. The value of the original key will disappear.

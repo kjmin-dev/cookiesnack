@@ -193,7 +193,7 @@ const cookiesnack = {
   /**
    * [findValueByKey description]
    * Will return the array of vlues if given key is in cookie string.
-   * For Object, you can just find the value by simply typing cookie.key
+   * For Object, you can just find the value by simply typing cookie.get(key)
    * 주아진 키가 쿠키 안에 존재하면 그 키가 참조하는 값을 반환합니다.
    * 객체의 경우는 cookie.get(key) 로 간단히 값을 찾을 수 있겠죠?
    *
