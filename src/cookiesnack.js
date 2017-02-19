@@ -1,6 +1,9 @@
 'use strict'
 /**
  * [cookiesnack]
+ * https://github.com/lightj/cookiesnack
+ * https://www.npmjs.com/package/cookiesnack
+ *
  * !!! NOTICE BEFORE REVIEW THIS CODE !!!
  *
  * |Parsed Object| in arguments (arg) at this code's comments is meaning the Map Object that had parsed already by parse (cookieStr)
@@ -9,6 +12,24 @@
  */
 
 const cookiesnack = {
+  /**
+   * [isPromise description]
+   * returns Promise if true
+   * @type {Boolean}
+   */
+  _isPromise : false,
+
+  /**
+   * [withPromise description]
+   * Decides to use a Promise or not.
+   * @param  {Boolean} onoff
+   * @return {Object} cookiesnack object
+   */
+  withPromise() {
+    this._isPromise = !!true
+    return this
+  },
+
   /**
    * [parseCookie description]
    * Parse the cookie string to Map object
@@ -40,7 +61,7 @@ const cookiesnack = {
     }
 
     // no callback, Promise supported
-    if(typeof Promise === 'function') {
+    if(typeof Promise === 'function' && this._isPromise) {
       return new Promise((resolve, reject) => {
         resolve(result)
       })
@@ -75,7 +96,7 @@ const cookiesnack = {
     }
 
     // no callback
-    if(typeof Promise === 'function') {
+    if(typeof Promise === 'function' && this._isPromise) {
       return new Promise((resolve, reject) => {
         resolve(result)
       })
@@ -111,7 +132,7 @@ const cookiesnack = {
     }
 
     // no callback
-    if(typeof Promise === 'function') {
+    if(typeof Promise === 'function' && this._isPromise) {
       return new Promise((resolve, reject) => {
         resolve(result)
       })
@@ -159,7 +180,7 @@ const cookiesnack = {
     }
 
     // no callback
-    if(typeof Promise === 'function') {
+    if(typeof Promise === 'function' && this._isPromise) {
       return new Promise((resolve, reject) => {
         resolve(result)
       })
@@ -201,7 +222,7 @@ const cookiesnack = {
     }
 
     // no callback
-    if(typeof Promise === 'function') {
+    if(typeof Promise === 'function' && this._isPromise) {
       return new Promise((resolve, reject) => {
         resolve(result)
       })
@@ -252,7 +273,7 @@ const cookiesnack = {
     }
 
     // no callback
-    if(typeof Promise === 'function') {
+    if(typeof Promise === 'function' && this._isPromise) {
       return new Promise((resolve, reject) => {
         resolve(result)
       })
@@ -265,7 +286,7 @@ const cookiesnack = {
   /**
    * [editValue description]
    * edits the value referenced by key to a new value
-   * Parsed Object does not need this function. just write -> cookie.key = value
+   * Parsed Object does not need this function. just write -> cookie.set('key', value)
    * 쿠키 안에서 해당 키가 참조하는 값을 새로운 값으로 바꿔줍니다.
    * 이미 객체로 파싱한 쿠키는 이 함수를 사용하지 않고 cookie.set(key, value) 으로 간단히 바꿀 수 있습니다.
    *
@@ -300,7 +321,7 @@ const cookiesnack = {
     }
 
     // no callback
-    if(typeof Promise === 'function') {
+    if(typeof Promise === 'function' && this._isPromise) {
       return new Promise((resolve, reject) => {
         resolve(result)
       })
