@@ -35,7 +35,7 @@ const cookiesnack = {
    * Parse the cookie string to Map object
    * This function returns Promise. please use this function like -> parse(str).then((result) => {})
    * 주어진 쿠키를 Map 객체로 반환합니다
-   * 프로미스가 지원되지 않는 환경을 제외하고 항상 프로미스 객체를 반환하니 콜백을 사용하지 않을 시에 parse(str).then((result) => {}) 방식으로 사용해야 함.
+   * 프로미스를 사용하려면 require('cookiesnack').withPromise(); 를 써야함
    *
    * @param  {String}   cookieStr [original cookie string]
    * @param  {Function} cb        [calls callback when you need. (optional)]
