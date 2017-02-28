@@ -1,5 +1,5 @@
 # Cookiesnackjs
-## leichtjoon https://github.com/lightj https://www.npmjs.com/package/cookiesnack
+## leichtjoon https://github.com/lightj/cookiesnack https://www.npmjs.com/package/cookiesnack
 ## About
 - This library is to make cookies easy to manipulate.
 - You can manipulate cookie string, or you can parse them into object types and manipulate them.
@@ -12,7 +12,7 @@
 - Install package via NPM
 -       npm i -save cookiesnack
 - Declare variable
--       const cookisnack =  require('cookiesnack');
+-       const cookiesnack =  require('cookiesnack');
 
 #### How to use cookiesnack
 #### as object
